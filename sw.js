@@ -1,5 +1,5 @@
 /* Offline support: serve the app from cache, refresh the cache in the background */
-const CACHE = 'scorebord-v2';
+const CACHE = 'scorebord-v3';
 const FILES = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
 
 self.addEventListener('install', e => {
