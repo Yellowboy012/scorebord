@@ -44,16 +44,17 @@
   /* ---------- Timer pill on the seam ---------- */
   #timer{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:5;
     display:flex;align-items:stretch;border-radius:999px;overflow:hidden;
-    background:rgba(18,18,20,.9);color:#fff;font-size:26px;font-weight:700;
+    background:#fff;color:#000;font-size:26px;font-weight:700;
     font-variant-numeric:tabular-nums;box-shadow:0 6px 20px rgba(0,0,0,.28);transition:background .25s}
-  #timer button{display:flex;align-items:center;gap:10px;color:#fff;font-size:inherit;font-weight:inherit;padding:11px 0;min-height:54px}
-  #timer button:active{background:rgba(255,255,255,.15)}
+  #timer button{display:flex;align-items:center;gap:10px;color:inherit;font-size:inherit;font-weight:inherit;padding:11px 0;min-height:54px}
+  #timer button:active{background:rgba(0,0,0,.08)}
   #timerToggle{padding-left:20px!important;padding-right:18px!important}
-  #timerReset{padding-left:16px!important;padding-right:18px!important;border-left:1px solid rgba(255,255,255,.22)}
+  #timerReset{padding-left:16px!important;padding-right:18px!important;border-left:1px solid rgba(0,0,0,.15)}
   #timer svg{width:22px;height:22px;fill:currentColor}
   #timer #timerReset svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
-  #timer.warn{background:#c2410c}
-  #timer.done{background:#d92d20;animation:blink 1s steps(2) infinite}
+  /* Warning and time-up states switch to white text on a strong color */
+  #timer.warn{background:#c2410c;color:#fff}
+  #timer.done{background:#d92d20;color:#fff;animation:blink 1s steps(2) infinite}
   @keyframes blink{50%{opacity:.55}}
 
   /* ---------- Bottom buttons ---------- */
